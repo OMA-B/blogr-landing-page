@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- tailwind stylesheet -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>[Blogr] | Frontend Mentor</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-body">
+
+  <div class="overall-container">
+    <div class="relative sm:h-custom-1 md:h-custom-2 bg-gradient-to-b from-primary-100 to-primary-200 rounded-bl-large overflow-hidden">
+      <!-- Navigation Section -->
+      <nav class="fixed top-0 left-0 bg-primary-100 flex px-8 py-5 md:px-20 lg:px-36 justify-between items-center w-full z-40">
+        <div class="flex items-center">
+          <div class="logo-container">
+            <img class="w-20" src="images/logo.svg" alt="Blogr logo">
+          </div>
+          <!-- for desktop -->
+          <ul class="hidden pl-5 md:flex">
+            <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
+              <span class="pr-2">Product</span> 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+              <!-- nav item dropdown -->
+              <ul class="dropdown-list">
+                <li class="dropdown-item">Overview</li>
+                <li class="dropdown-item">Pricing</li>
+                <li class="dropdown-item">Marketplace</li>
+                <li class="dropdown-item">Features</li>
+                <li class="dropdown-item">Integrations</li>
+              </ul>
+            </li>
+            <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
+              <span class="pr-2">Category</span> 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+            </li>
+            <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
+              <span class="pr-2">Connect</span> 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+            </li>
+            <!-- Product
+
+            Overview
+            Pricing
+            Marketplace
+            Features
+            Integrations
+
+            Company
+
+            About
+            Team
+            Blog
+            Careers
+
+            Connect
+
+            Contact
+            Newsletter
+            LinkedIn -->
+          </ul>
+        </div>
+
+        <!-- for desktop -->
+        <ul class="hidden md:flex">
+          <li class="ml-7 text-white text-sm py-2">
+            <a href="#">LogIn</a>
+          </li>
+          <li class="ml-7 text-white text-sm bg-white py-2 px-4 rounded-full">
+            <a href="#" class="text-primary-200">Sign Up</a>
+          </li>
+        </ul>
+        <!-- for mobile -->
+        <div class="menu-bar md:hidden">
+          <img class="w-10" src="images/icon-hamburger.svg" alt="">
+        </div>
+      </nav><!-- Navigation Section -->
+      <!-- background image -->
+      <img class="scale-150 md:hidden" src="images/bg-pattern-intro-mobile.svg" alt="">
+      <img class="scale-125 hidden md:block md:relative -top-80 -right-40" src="images/bg-pattern-intro-desktop.svg" alt="">
+      <!-- Header Section -->
+      <header class="text-white absolute top-52 left-0 sm:top-40 w-full">
+        <h1 class="text-4xl text-center mx-auto px-20">A modern publishing platform</h1>
+        <h3 class="text-lg text-center mx-auto px-20 pt-6 pb-14">Grow your audience and build your online brand</h3>
+
+        <div class="buttons flex justify-center font-bold">
+          <button class="mr-9 bg-white py-2 px-4 rounded-full">
+            <a href="#" class="text-primary-200 ">Start for Free</a>
+          </button>
+          <button class="py-2 px-4 border-2 border-white rounded-full">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+      </header><!-- Header Section -->
+    </div>
+
+    <!-- Articles section -->
+    <main>
+      <!-- first article -->
+      <article class="pt-24">
+        <h2 class="text-footer text-3xl text-center mx-auto font-bold px-11 py-8">Designed for the future</h2>
+        <div class="md:grid md:grid-cols-5 md:grid-rows-1 md:gap-3">
+          <div class="first-illustration w-100 sm:w-3/4 mt-8 mx-auto md:col-span-2 md:col-start-4 md:col-end-6 md:mt-2 md:w-full flex items-center overflow-hidden lg:w-[350px]">
+            <!-- for mobile -->
+            <img class="w-full md:hidden" src="images/illustration-editor-mobile.svg" alt="illustration-editor-mobile">
+            <!-- for desktop -->
+            <img class="w-full hidden md:block md:scale-125 md:translate-x-24" src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+          </div>
+  
+          <div class="md:col-span-3 md:col-start-1 md:col-end-4 md:row-start-1 lg:pl-28">
+            <h2 class="common-header">Introducing an extensible editor</h2>
+            <p class="common-para">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+  
+            <h2 class="common-header">Robust content management</h2>
+            <p class="common-para">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          </div>
+        </div>
+      </article><!-- first article -->
+      <!-- second article -->
+      <!-- image creation and alignment for mobile and desktop overlay -->
+      <div class="second-illustration relative top-11 mx-auto z-10 md:w-[270px] md:top-16 md:ml-14 lg:ml-32">
+        <img src="images/illustration-phones.svg" alt="illustration-phones">
+      </div>
+      <section class="relative -mt-64 mb-20 bg-gradient-to-t from-secondary to-footer rounded-tr-large rounded-bl-large pb-44 overflow-hidden sm:h-[500px] md:-mt-[200px] md:h-[200px] md:grid md:grid-cols-5 md:grid-rows-1">
+        <!-- image to scale in background -->
+        <img class="relative -top-36 scale-125  md:scale-150 md:-top-44 col-span-2 col-start-1 col-end-3" src="images/bg-pattern-circles.svg" alt="">
+
+        <div class="absolute top-64 left-0 mt-10 md:relative md:top-0 col-span-3 col-start-3 col-end-6 row-start-1">
+          <h2 class="text-white text-4xl text-center mx-auto font-bold px-11 py-6 md:text-left md:text-2xl md:pb-3 md:pl-16">State of the Art Infrastructure</h2>
+          <p class="py-2 px-16 text-center mx-auto text-xl text-gray-200 md:text-left md:text-base">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+      </section><!-- second article -->
+      <!-- third article -->
+      <article class="md:grid md:grid-cols-2 md:py-11">
+        <div class="third-illustration md:col-span-1 md:col-start-1 md:col-end-2">
+          <!-- for mobile -->
+          <img class="mx-auto md:hidden" src="images/illustration-laptop-mobile.svg" alt="illustration-laptop-mobile">
+          <!-- for desktop -->
+          <img class="md:w-[350px] lg:w-[400px] md:scale-125 md:mt-14 mx-auto hidden md:block md:-ml-24" src="images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop">
+        </div>
+  
+        <div class="md:col-span-1 md:col-start-2 md:col-end-3 lg:mt-24">
+          <h2 class="common-header md:pl-0 lg:-ml-14">Free, open, simple</h2>
+          <p class="common-para md:pl-0 lg:-ml-14">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+    
+          <h2 class="common-header md:pl-0 lg:-ml-14">Powerful tooling</h2>
+          <p class="common-para md:pl-0 lg:-ml-14">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+        </div>
+      </article>
+    </main><!-- Articles section -->
+
+    <!-- footer section -->
+    <footer class="bg-footer mt-20 rounded-tr-large text-center py-20 md:px-24 lg:px-32 md:grid md:grid-cols-4">
+      <div class="logo-container mb-16 md:col-span-1 md:col-start-1 md:col-end-2">
+        <img class="mx-auto" src="images/logo.svg" alt="Blogr logo">
+      </div>
+
+      <nav class="product my-14 md:my-0 md:col-span-1 md:col-start-2 md:col-end-3">
+        <h4 class="fotter-h4">Product</h4>
+        <ul>
+          <li class="fotter-li">Overview</li>
+          <li class="fotter-li">Pricing</li>
+          <li class="fotter-li">Marketplace</li>
+          <li class="fotter-li">Features</li>
+          <li class="fotter-li">Integrations</li>
+        </ul>
+      </nav>
+
+      <nav class="company my-14 md:my-0 md:col-span-1 md:col-start-3 md:col-end-4">
+        <h4 class="fotter-h4">Company</h4>
+        <ul>
+          <li class="fotter-li">About</li>
+          <li class="fotter-li">Team</li>
+          <li class="fotter-li">Blog</li>
+          <li class="fotter-li">Careers</li>
+        </ul>
+      </nav>
+
+      <nav class="connect my-14 md:my-0 md:col-span-1 md:col-start-4 md:col-end-5">
+        <h4 class="fotter-h4">Connect</h4>
+        <ul>
+          <li class="fotter-li">Contact</li>
+          <li class="fotter-li">Newsletter</li>
+          <li class="fotter-li">LinkedIn</li>
+        </ul>
+      </nav>
+    </footer><!-- footer section -->
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
