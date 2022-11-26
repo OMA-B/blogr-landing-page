@@ -4,12 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.header-bg {
+    @apply bg-[url(/images/bg-pattern-intro-mobile.svg)] bg-no-repeat bg-cover bg-center md:bg-[url(/images/bg-pattern-intro-desktop.svg)] md:bg-right;
+}
+
 .common-header {
     @apply text-footer text-3xl md:text-xl text-center md:text-left mx-auto font-bold px-11 py-8 md:pb-3 md:pl-16;
 }
 
 .common-para {
     @apply py-2 px-16 text-center md:text-left mx-auto text-xl md:text-base text-secondary;
+}
+
+.background {
+    @apply bg-[url(/images/bg-pattern-circles.svg)] bg-no-repeat bg-cover bg-center md:bg-none;
 }
 
 .fotter-h4 {
@@ -25,5 +33,5 @@
 }
 
 .dropdown-item {
-    @apply text-secondary text-bold mb-1 hover:text-footer cursor-pointer;
+    @apply text-secondary font-bold mb-1 hover:text-footer cursor-pointer;
 }

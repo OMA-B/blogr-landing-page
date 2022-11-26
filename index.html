@@ -18,89 +18,90 @@
 <body class="font-body">
 
   <div class="overall-container">
-    <div class="relative sm:h-custom-1 md:h-custom-2 bg-gradient-to-b from-primary-100 to-primary-200 rounded-bl-large overflow-hidden">
-      <!-- Navigation Section -->
-      <nav class="fixed top-0 left-0 bg-primary-100 flex px-8 py-5 md:px-20 lg:px-36 justify-between items-center w-full z-40">
-        <div class="flex items-center">
-          <div class="logo-container">
-            <img class="w-20" src="images/logo.svg" alt="Blogr logo">
+
+    <div class="relative bg-gradient-to-b from-primary-100 to-primary-200 rounded-bl-large">
+      <!-- implementing background image -->
+      <div class="header-bg w-full py-56 md:py-36">
+        <!-- Navigation Section -->
+        <nav class="fixed top-0 left-0 bg-primary-100 flex px-8 py-5 md:px-20 lg:px-36 justify-between items-center w-full z-40">
+          <div class="flex items-center">
+            <div class="logo-container">
+              <img class="w-20" src="images/logo.svg" alt="Blogr logo">
+            </div>
+            <!-- for desktop -->
+            <ul class="hidden pl-5 md:flex">
+              <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
+                <span class="pr-2">Product</span> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                <!-- nav item dropdown -->
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">Overview</li>
+                  <li class="dropdown-item">Pricing</li>
+                  <li class="dropdown-item">Marketplace</li>
+                  <li class="dropdown-item">Features</li>
+                  <li class="dropdown-item">Integrations</li>
+                </ul>
+              </li>
+              <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
+                <span class="pr-2">Category</span> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+              </li>
+              <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
+                <span class="pr-2">Connect</span> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+              </li>
+              <!-- Product
+
+              Overview
+              Pricing
+              Marketplace
+              Features
+              Integrations
+
+              Company
+
+              About
+              Team
+              Blog
+              Careers
+
+              Connect
+
+              Contact
+              Newsletter
+              LinkedIn -->
+            </ul>
           </div>
+
           <!-- for desktop -->
-          <ul class="hidden pl-5 md:flex">
-            <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
-              <span class="pr-2">Product</span> 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-              <!-- nav item dropdown -->
-              <ul class="dropdown-list">
-                <li class="dropdown-item">Overview</li>
-                <li class="dropdown-item">Pricing</li>
-                <li class="dropdown-item">Marketplace</li>
-                <li class="dropdown-item">Features</li>
-                <li class="dropdown-item">Integrations</li>
-              </ul>
+          <ul class="hidden md:flex">
+            <li class="ml-7 text-white text-sm py-2">
+              <a href="#">LogIn</a>
             </li>
-            <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
-              <span class="pr-2">Category</span> 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+            <li class="ml-7 text-white text-sm bg-white py-2 px-4 rounded-full">
+              <a href="#" class="text-primary-200">Sign Up</a>
             </li>
-            <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
-              <span class="pr-2">Connect</span> 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-            </li>
-            <!-- Product
-
-            Overview
-            Pricing
-            Marketplace
-            Features
-            Integrations
-
-            Company
-
-            About
-            Team
-            Blog
-            Careers
-
-            Connect
-
-            Contact
-            Newsletter
-            LinkedIn -->
           </ul>
-        </div>
+          <!-- for mobile -->
+          <div class="menu-bar md:hidden">
+            <img class="w-10" src="images/icon-hamburger.svg" alt="">
+          </div>
+        </nav><!-- Navigation Section -->
+        <!-- Header Section -->
+        <header class="text-white w-full">
+          <h1 class="text-4xl text-center mx-auto px-20">A modern publishing platform</h1>
+          <h3 class="text-lg text-center mx-auto px-20 pt-6 pb-14">Grow your audience and build your online brand</h3>
 
-        <!-- for desktop -->
-        <ul class="hidden md:flex">
-          <li class="ml-7 text-white text-sm py-2">
-            <a href="#">LogIn</a>
-          </li>
-          <li class="ml-7 text-white text-sm bg-white py-2 px-4 rounded-full">
-            <a href="#" class="text-primary-200">Sign Up</a>
-          </li>
-        </ul>
-        <!-- for mobile -->
-        <div class="menu-bar md:hidden">
-          <img class="w-10" src="images/icon-hamburger.svg" alt="">
-        </div>
-      </nav><!-- Navigation Section -->
-      <!-- background image -->
-      <img class="scale-150 md:hidden" src="images/bg-pattern-intro-mobile.svg" alt="">
-      <img class="scale-125 hidden md:block md:relative -top-80 -right-40" src="images/bg-pattern-intro-desktop.svg" alt="">
-      <!-- Header Section -->
-      <header class="text-white absolute top-52 left-0 sm:top-40 w-full">
-        <h1 class="text-4xl text-center mx-auto px-20">A modern publishing platform</h1>
-        <h3 class="text-lg text-center mx-auto px-20 pt-6 pb-14">Grow your audience and build your online brand</h3>
-
-        <div class="buttons flex justify-center font-bold">
-          <button class="mr-9 bg-white py-2 px-4 rounded-full">
-            <a href="#" class="text-primary-200 ">Start for Free</a>
-          </button>
-          <button class="py-2 px-4 border-2 border-white rounded-full">
-            <a href="#">Learn More</a>
-          </button>
-        </div>
-      </header><!-- Header Section -->
+          <div class="buttons flex justify-center font-bold">
+            <button class="mr-9 bg-white py-2 px-4 rounded-full">
+              <a href="#" class="text-primary-200 ">Start for Free</a>
+            </button>
+            <button class="py-2 px-4 border-2 border-white rounded-full">
+              <a href="#">Learn More</a>
+            </button>
+          </div>
+        </header><!-- Header Section -->
+      </div>
     </div>
 
     <!-- Articles section -->
@@ -130,13 +131,14 @@
       <div class="second-illustration relative top-11 mx-auto z-10 md:w-[270px] md:top-16 md:ml-14 lg:ml-32">
         <img src="images/illustration-phones.svg" alt="illustration-phones">
       </div>
-      <section class="relative -mt-64 mb-20 bg-gradient-to-t from-secondary to-footer rounded-tr-large rounded-bl-large pb-44 overflow-hidden sm:h-[500px] md:-mt-[200px] md:h-[200px] md:grid md:grid-cols-5 md:grid-rows-1">
-        <!-- image to scale in background -->
-        <img class="relative -top-36 scale-125  md:scale-150 md:-top-44 col-span-2 col-start-1 col-end-3" src="images/bg-pattern-circles.svg" alt="">
 
-        <div class="absolute top-64 left-0 mt-10 md:relative md:top-0 col-span-3 col-start-3 col-end-6 row-start-1">
-          <h2 class="text-white text-4xl text-center mx-auto font-bold px-11 py-6 md:text-left md:text-2xl md:pb-3 md:pl-16">State of the Art Infrastructure</h2>
-          <p class="py-2 px-16 text-center mx-auto text-xl text-gray-200 md:text-left md:text-base">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      <section class="relative -mt-64 mb-20 bg-gradient-to-t from-secondary to-footer rounded-tr-large rounded-bl-large overflow-hidden md:-mt-[200px] md:h-[200px] md:grid md:grid-cols-5 md:grid-rows-1">
+        <!-- image to scale in background -->
+        <img class="hidden md:block md:scale-150 md:-top-44 col-span-2 col-start-1 col-end-3" src="images/bg-pattern-circles.svg" alt="">
+
+        <div class="background relative -top-[250px] pt-[450px] -mb-[130px] md:top-0 md:py-2 md:-mb-0 col-span-3 col-start-3 col-end-6 row-start-1">
+          <h2 class="text-white text-5xl text-center mx-auto font-bold px-11 py-6 md:text-left md:text-2xl md:pb-3 md:pl-16">State of the Art Infrastructure</h2>
+          <p class="py-2 px-16 text-center mx-auto text-2xl text-gray-200 md:text-left md:text-base">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
         </div>
       </section><!-- second article -->
       <!-- third article -->
@@ -194,6 +196,7 @@
         </ul>
       </nav>
     </footer><!-- footer section -->
+
   </div>
 
 
