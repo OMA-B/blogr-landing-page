@@ -29,9 +29,25 @@
 }
 
 .dropdown-list {
-    @apply absolute top-9 -left-6 bg-white p-5 rounded-md drop-shadow-xl;
+    @apply absolute top-5 -left-4 bg-white p-5 rounded-md drop-shadow-xl;
 }
 
 .dropdown-item {
-    @apply text-secondary font-bold mb-1 hover:text-footer cursor-pointer;
+    @apply text-secondary font-bold mb-1 hover:text-footer hover:scale-105 cursor-pointer transition-all;
+}
+
+/* ------------some animation for nav display */
+.hide-list {
+    opacity: 0;
+    transform: translateY(-100vh);
+}
+
+.show-list {
+    animation: show .2s ease-out;
+}
+
+@keyframes show {
+    0%{ opacity: 0; transform: translateY(-100vh); }
+    75%{ opacity: 0.6;}
+    100%{ transform: translateY(0); opacity: 1; }
 }
