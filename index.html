@@ -25,14 +25,14 @@
         <!-- Navigation Section -->
         <nav class="fixed top-0 left-0 bg-primary-100 flex px-8 py-5 md:px-20 lg:px-36 justify-between items-center w-full z-40">
           <div class="flex items-center">
-            <div class="logo-container">
+            <div class="logo-container cursor-pointer">
               <img class="w-20" src="images/logo.svg" alt="Blogr logo">
             </div>
             <!-- for desktop -->
             <ul class="hidden pl-5 md:flex" id="desktop-dropdown">
               <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
                 <span class="pr-2">Product</span> 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
                 <!-- nav item dropdown -->
                 <ul class="dropdown-list hide-list">
                   <li class="dropdown-item">Overview</li>
@@ -44,7 +44,7 @@
               </li>
               <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
                 <span class="pr-2">Category</span> 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
                 <!-- nav item dropdown -->
                 <ul class="dropdown-list hide-list">
                   <li class="dropdown-item">About</li>
@@ -55,7 +55,7 @@
               </li>
               <li class="relative ml-7 text-white text-sm flex items-center cursor-pointer hover:underline">
                 <span class="pr-2">Connect</span> 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
                 <!-- nav item dropdown -->
                 <ul class="dropdown-list hide-list">
                   <li class="dropdown-item">Contact</li>
@@ -68,16 +68,59 @@
 
           <!-- for desktop -->
           <ul class="hidden md:flex">
-            <li class="ml-7 text-white text-sm py-2">
-              <a href="#">LogIn</a>
+            <li class="">
+              <a href="#" class="sign-in text-white">LogIn</a>
             </li>
-            <li class="ml-7 text-white text-sm bg-white py-2 px-4 rounded-full">
-              <a href="#" class="text-primary-200">Sign Up</a>
+            <li class="">
+              <a href="#" class="sign-in bg-white hover:text-white text-primary-200">Sign Up</a>
             </li>
           </ul>
           <!-- for mobile -->
-          <div class="menu-bar md:hidden">
-            <img class="w-10" src="images/icon-hamburger.svg" alt="">
+          <div class="menu-bar cursor-pointer md:hidden">
+            <div class="burgers"></div>
+            <div class="burgers"></div>
+            <div class="burgers"></div>
+          </div>
+          <!-- mobile menu dropdown -->
+          <div class="absolute top-[60px] left-[8vw] w-[84vw] rounded-lg bg-white py-5" id="dropdown-menu">
+            <ul class="burger-list">Product
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block text-primary-200 mb-1 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+              <ul class="bg-[#eee] mt-2 rounded-lg p-3">
+                <li class="burger-item">Overview</li>
+                <li class="burger-item">Pricing</li>
+                <li class="burger-item">Marketplace</li>
+                <li class="burger-item">Features</li>
+                <li class="burger-item">Integrations</li>
+              </ul>
+            </ul>
+            <ul class="burger-list">Category
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block text-primary-200 mb-1 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+              <ul class="bg-[#eee] mt-2 rounded-lg p-3">
+                <li class="burger-item">About</li>
+                <li class="burger-item">Team</li>
+                <li class="burger-item">Blog</li>
+                <li class="burger-item">Careers</li>
+              </ul>
+            </ul>
+            <ul class="burger-list">Connect
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block text-primary-200 mb-1 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+              <ul class="bg-[#eee] mt-2 rounded-lg p-3">
+                <li class="burger-item">Contact</li>
+                <li class="burger-item">Newsletter</li>
+                <li class="burger-item">LinkedIn</li>
+              </ul>
+            </ul>
+            <div class="w-[80%] border-t-2 border-[#eee] mx-auto mt-4 pt-8">
+              <a href="#" class="w-[120px] mx-auto block text-2xl text-footer font-bold hover:bg-primary-200 hover:text-white active:bg-primary-200 active:text-white px-5 py-4 rounded-full text-center mb-4">Login</a>
+
+              <a href="#" class="w-[120px] mx-auto block text-2xl text-white font-bold bg-gradient-to-r from-primary-100 to-primary-200 hover:text-footer active:text-footer px-5 py-4 rounded-full text-center mb-4">Sign Up</a>
+            </div>
           </div>
         </nav><!-- Navigation Section -->
         <!-- Header Section -->
@@ -86,11 +129,11 @@
           <h3 class="text-lg text-center mx-auto px-20 pt-6 pb-14">Grow your audience and build your online brand</h3>
 
           <div class="buttons flex justify-center font-bold">
-            <button class="mr-9 bg-white py-2 px-4 rounded-full">
-              <a href="#" class="text-primary-200 ">Start for Free</a>
+            <button class="mr-9">
+              <a href="#" class="text-primary-200 bg-white py-2 px-4 rounded-full hover:bg-[rgb(255,255,255,0.3)] hover:text-white">Start for Free</a>
             </button>
-            <button class="py-2 px-4 border-2 border-white rounded-full">
-              <a href="#">Learn More</a>
+            <button class="">
+              <a href="#" class="border-2 border-white py-2 px-4 rounded-full hover:bg-white hover:text-primary-200">Learn More</a>
             </button>
           </div>
         </header><!-- Header Section -->
@@ -129,7 +172,7 @@
         <!-- image to scale in background -->
         <img class="hidden relative md:block md:scale-150 md:-top-44 col-span-2 col-start-1 col-end-3" src="images/bg-pattern-circles.svg" alt="">
 
-        <div class="background relative -top-[220px] pt-[450px] -mb-[130px] md:top-0 md:py-2 md:-mb-0 col-span-3 col-start-3 col-end-6 row-start-1">
+        <div class="background relative -top-[220px] pt-[450px] -mb-[130px] md:top-0 md:py-2 md: md:-mb-0 col-span-3 col-start-3 col-end-6 row-start-1">
           <h2 class="text-white text-5xl text-center mx-auto font-bold px-11 py-6 md:text-left md:text-2xl md:pb-3 md:pl-16">State of the Art Infrastructure</h2>
           <p class="py-2 px-16 text-center mx-auto text-2xl text-gray-200 md:text-left md:text-base">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
         </div>

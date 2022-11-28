@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.sign-in {
+    @apply ml-7 text-sm py-2 px-4 rounded-full hover:bg-[rgb(255,255,255,0.3)];
+}
+
+.burgers {
+    @apply w-[32px] h-[3px] bg-white rounded-full my-1.5;
+}
+
 .header-bg {
     @apply bg-[url(/images/bg-pattern-intro-mobile.svg)] bg-no-repeat bg-cover bg-center md:bg-[url(/images/bg-pattern-intro-desktop.svg)] md:bg-right;
 }
@@ -25,7 +33,7 @@
 }
 
 .fotter-li {
-    @apply text-gray-200 text-lg mb-1;
+    @apply text-gray-200 text-lg mb-1 hover:underline hover:font-bold cursor-pointer;
 }
 
 .dropdown-list {
@@ -48,6 +56,15 @@
 
 @keyframes show {
     0%{ opacity: 0; transform: translateY(-100vh); }
-    75%{ opacity: 0.6;}
+    75%{ transform: translateY(40px); opacity: 0.4; }
     100%{ transform: translateY(0); opacity: 1; }
+}
+
+/* ------------ for mobile nav dropdown */
+.burger-list {
+    @apply w-[80%] mx-auto text-center py-4 text-2xl font-bold text-footer hover:text-secondary active:text-secondary cursor-pointer;
+}
+
+.burger-item {
+    @apply text-xl font-bold text-secondary hover:text-footer active:text-footer hover:scale-105 cursor-pointer my-3;
 }
