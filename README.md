@@ -1,3 +1,36 @@
+# from OMA-B
+This is quite some project to build my knowledge on how to:
+
+~ build a landing page
+
+~ implement and improve my knowledge of TailwindCSS
+
+and more
+
+Resources used:
+
+~ tailwind toolkit
+
+~ heroicon by tailwind
+
+~ fonts from Google Fonts
+
+~ w3Schools
+
+~ Inspiration/MockUp from Frontend Mentor
+
+# Live: https://oma-blogr-landing-page.netlify.app/
+
+I've arranged the files and codes with comments in such a way that you wouldn't find difficulty navigating through and understanding...
+
+But if get muzzled at any point, you can always reach out to me on any of my social media platform(links' on my profile)...
+
+I hope you like it, and if find it helpful/useful, kindly give a star and leave a follow. Thank you.
+
+Would love to receive your feedback as well, so kindly reach out.
+
+
+
 # Frontend Mentor - Blogr landing page
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)

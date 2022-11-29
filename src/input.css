@@ -8,8 +8,13 @@
     @apply ml-7 text-sm py-2 px-4 rounded-full hover:bg-[rgb(255,255,255,0.3)];
 }
 
+.reg-btn {
+    @apply w-[120px] mx-auto block text-2xl px-5 py-4 rounded-full text-center mb-4;
+}
+
 .burgers {
     @apply w-[32px] h-[3px] bg-white rounded-full my-1.5;
+    transition: all .5s;
 }
 
 .header-bg {
@@ -67,4 +72,16 @@
 
 .burger-item {
     @apply text-xl font-bold text-secondary hover:text-footer active:text-footer hover:scale-105 cursor-pointer my-3;
+}
+
+.burgers.top {
+    transform: translateY(7.6px) rotateZ(-45deg);
+}
+
+.burgers.middle {
+    opacity: 0;
+}
+
+.burgers.bottom {
+    transform: translateY(-7.6px) rotateZ(45deg);
 }
