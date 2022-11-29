@@ -617,10 +617,6 @@ video {
   margin-top: 1rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
 .mr-9{
   margin-right: 2.25rem;
 }
@@ -647,10 +643,6 @@ video {
 
 .mb-16{
   margin-bottom: 4rem;
-}
-
-.block{
-  display: block;
 }
 
 .inline-block{
@@ -691,10 +683,6 @@ video {
 
 .w-\[80\%\]{
   width: 80%;
-}
-
-.w-\[120px\]{
-  width: 120px;
 }
 
 .cursor-pointer{
@@ -826,16 +814,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-20{
   padding-left: 5rem;
   padding-right: 5rem;
@@ -917,11 +895,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -940,6 +913,11 @@ video {
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold{
@@ -1001,7 +979,7 @@ video {
   margin-right: auto;
   margin-bottom: 1rem;
   display: block;
-  width: 120px;
+  width: 50%;
   border-radius: 9999px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1231,7 +1209,7 @@ video {
 }
 
 .burgers.top {
-  transform: translateY(7.6px) rotateZ(-45deg);
+  transform: translateY(8.5px) rotateZ(-45deg);
 }
 
 .burgers.middle {
@@ -1239,7 +1217,7 @@ video {
 }
 
 .burgers.bottom {
-  transform: translateY(-7.6px) rotateZ(45deg);
+  transform: translateY(-8.5px) rotateZ(45deg);
 }
 
 .hover\:bg-primary-200:hover{

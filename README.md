@@ -33,7 +33,7 @@ Would love to receive your feedback as well, so kindly reach out.
 
 # Frontend Mentor - Blogr landing page
 
-![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Blogr landing page coding challenge](./images/desktop-preview.jpg)
 
 ## Welcome! 👋
 

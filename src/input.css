@@ -9,7 +9,7 @@
 }
 
 .reg-btn {
-    @apply w-[120px] mx-auto block text-2xl px-5 py-4 rounded-full text-center mb-4;
+    @apply w-[50%] mx-auto block text-2xl px-5 py-4 rounded-full text-center mb-4;
 }
 
 .burgers {
@@ -75,7 +75,7 @@
 }
 
 .burgers.top {
-    transform: translateY(7.6px) rotateZ(-45deg);
+    transform: translateY(8.5px) rotateZ(-45deg);
 }
 
 .burgers.middle {
@@ -83,5 +83,5 @@
 }
 
 .burgers.bottom {
-    transform: translateY(-7.6px) rotateZ(45deg);
+    transform: translateY(-8.5px) rotateZ(45deg);
 }
