@@ -597,8 +597,8 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.ml-7{
-  margin-left: 1.75rem;
+.ml-3{
+  margin-left: 0.75rem;
 }
 
 .mb-1{
@@ -949,10 +949,6 @@ video {
   outline-offset: 2px;
 }
 
-.outline{
-  outline-style: solid;
-}
-
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -960,7 +956,7 @@ video {
 }
 
 .sign-in{
-  margin-left: 1.75rem;
+  margin-left: 0.75rem;
   border-radius: 9999px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1442,9 +1438,9 @@ video {
     padding-bottom: 9rem;
   }
 
-  .md\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .md\:px-11{
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
   }
 
   .md\:py-2{
@@ -1489,7 +1485,17 @@ video {
   }
 }
 
+@media (min-width: 750px){
+  .semilg\:ml-5{
+    margin-left: 1.25rem;
+  }
+}
+
 @media (min-width: 875px){
+  .lg\:ml-8{
+    margin-left: 2rem;
+  }
+
   .lg\:ml-32{
     margin-left: 8rem;
   }
@@ -1510,9 +1516,9 @@ video {
     width: 400px;
   }
 
-  .lg\:px-36{
-    padding-left: 9rem;
-    padding-right: 9rem;
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:px-32{
@@ -1522,5 +1528,12 @@ video {
 
   .lg\:pl-28{
     padding-left: 7rem;
+  }
+}
+
+@media (min-width: 1270px){
+  .xl\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
